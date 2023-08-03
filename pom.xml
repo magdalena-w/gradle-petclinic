@@ -154,7 +154,7 @@
 
   <scm>
     <developerConnection>
-        scm:git:git@github.com:magdalena-w/spring-petclinic.git
+        scm:git:https://github.com/magdalena-w/spring-petclinic.git
     </developerConnection>
     <tag>3.0.0</tag>
   </scm>
