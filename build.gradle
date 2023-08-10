@@ -47,7 +47,7 @@ tasks.named('test') {
   useJUnitPlatform()
 }
 
-task openReport(dependsOn: ':build') {
+task openReportInBrowser(dependsOn: ':build') {
     doLast {
         java.awt.Desktop.getDesktop().browse (new File("$buildDir/reports/tests/test/index.html").toURI())
     }
