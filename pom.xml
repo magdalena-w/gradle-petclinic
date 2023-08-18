@@ -16,7 +16,7 @@
     <repository>
         <id>Github-repo</id>
         <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/magdalena-w/spring-petclinic</url>
+        <url>https://maven.pkg.github.com/magdalena-w/gradle-petclinic</url>
     </repository>
   </distributionManagement>
 
@@ -161,9 +161,9 @@
   </dependencyManagement>
 
   <scm>
-    <connection>scm:git:https://github.com/magdalena-w/spring-petclinic.git</connection>
-    <developerConnection>scm:git:https://github.com/magdalena-w/spring-petclinic.git</developerConnection>
-    <url>https://github.com/magdalena-w/spring-petclinic</url>
+    <connection>scm:git:https://github.com/magdalena-w/gradle-petclinic.git</connection>
+    <developerConnection>scm:git:https://github.com/magdalena-w/gradle-petclinic.git</developerConnection>
+    <url>https://github.com/magdalena-w/gradle-petclinic</url>
     <tag>spring-petclinic-3.0.1</tag>
   </scm>
 
