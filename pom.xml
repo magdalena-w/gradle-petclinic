@@ -14,10 +14,19 @@
 
   <distributionManagement>
     <repository>
-        <id>Github-repo</id>
-        <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/magdalena-w/gradle-petclinic</url>
+        <id>nexus</id>
+        <url>https://localhost:8086/repository/maven-releases/</url>
     </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <url>https://localhost:8086/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <!-- 
+    <repository>
+        <id>github</id>
+        <url>https://maven.pkg.github.com/magdalena-w/gradle-petclinic</url>
+        </repository>
+    -->
   </distributionManagement>
 
   <properties>
@@ -306,7 +315,7 @@
             <version>3.0.0-M1</version>
             <configuration>
                 <repositoryId>nexus</repositoryId>
-                <url>http://localhost:8086/repository/maven-releases/</url>
+                <url>https://localhost:8086/repository/maven-releases/</url>
             </configuration>
         </plugin>
 
