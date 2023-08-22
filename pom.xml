@@ -15,11 +15,11 @@
   <distributionManagement>
     <repository>
         <id>nexus</id>
-        <url>https://localhost:8086/repository/maven-releases/</url>
+        <url>http://localhost:8086/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
         <id>nexus</id>
-        <url>https://localhost:8086/repository/maven-snapshots/</url>
+        <url>http://localhost:8086/repository/maven-snapshots/</url>
     </snapshotRepository>
     <!-- 
     <repository>
@@ -318,8 +318,6 @@
                 <url>https://localhost:8086/repository/maven-releases/</url>
             </configuration>
         </plugin>
-
-
     </plugins>
   </build>
 

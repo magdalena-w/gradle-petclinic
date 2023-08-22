@@ -17,10 +17,11 @@ sourceCompatibility = '17'
 repositories {
     mavenCentral()
     maven {
-        url "https://localhost:8086/repository/maven-public/"
-        credentials {
-            username = System.getenv("NEXUS_USER")
-            password = System.getenv("NEXUS_PASSWORD")
+        url "http://localhost:8086/repository/maven-public/"
+        allowInsecureProtocol = true
+        //credentials {
+        //    username = System.getenv("NEXUS_USER")
+        //    password = System.getenv("NEXUS_PASSWORD")
         }   
     }
 }
@@ -72,14 +73,5 @@ publishing {
         }
     }
 
-    repositories {
-        maven {
-            url "https://localhost:8086/repository/maven-releases/"
-            credentials {
-                username = System.getenv("NEXUS_USER")
-                password = System.getenv("NEXUS_PASSWORD")
-            }
-        }
-    }
 }
 
